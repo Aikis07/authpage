@@ -1,15 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Signin from '@/views/sign-in.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/sign-in',
-    name: 'signin',
-    component: Signin,
-  }
+
 ]
 
 const router = new VueRouter({

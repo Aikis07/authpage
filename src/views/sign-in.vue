@@ -1,18 +1,20 @@
 <template>
-  <div class="sign-in flex justify-center gap-56 mt-7 lg:mt-28 w-full">
-    <base-left class="left"/>
-    <base-right v-if="$mq === 'lg'" class="right"/>
+  <div class="sign-in bg-gradient-to-tl from-blue-100 to-white h-screen">
+    <div class="wrapper flex justify-center gap-24 2xl:gap-56 pt-6 lg:pt-28 w-full">
+      <app-form class="left"/>
+      <app-slogan class="right hidden xl:flex"/>
+    </div>
   </div>
 </template>
 
 <script>
-import BaseLeft from '@/components/BaseLeft.vue';
-import BaseRight from '@/components/BaseRight.vue'
+import AppForm from '@/components/AppForm.vue';
+import AppSlogan from '@/components/AppSlogan.vue'
 
   export default {
     components: {
-      BaseLeft,
-      BaseRight,
+      AppForm,
+      AppSlogan,
     },
   }
 </script>

@@ -1,9 +1,17 @@
 <template>
   <div id="app">
-    <router-view />
+    <sign-in />
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import SignIn from '@/views/sign-in.vue'
 
-</style>
+export default {
+  components: {
+    SignIn
+  },
+};
+</script>
+
+<style lang="scss"></style>
